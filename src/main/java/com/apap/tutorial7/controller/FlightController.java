@@ -59,10 +59,15 @@ public class FlightController {
 		if(flight.equals(null)) {
 			return "Couldn't find your flight";
 		}
-		
-		flight.setDestination(destination);
-		flight.setOrigin(origin);
-		flight.setTime(time);
+		if (destination != null) {
+			flight.setDestination(destination);
+		}
+		if (origin != null) {
+			flight.setOrigin(origin);
+		}
+		if (time != null) {
+			flight.setTime(time);
+		}
 		flightService.updateFlight(flightId, flight);
 		return "Flight update success";
 	}

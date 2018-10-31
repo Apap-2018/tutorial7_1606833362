@@ -3,7 +3,6 @@ package com.apap.tutorial7.service;
 import java.util.List;
 import java.util.Optional;
 import com.apap.tutorial7.model.FlightModel;
-import com.apap.tutorial7.model.PilotModel;
 
 /**
  * FlightService
