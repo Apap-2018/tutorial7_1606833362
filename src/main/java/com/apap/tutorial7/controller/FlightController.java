@@ -39,7 +39,7 @@ public class FlightController {
 	}
 	
 	@GetMapping(value = "/all")
-	public List<FlightModel> flightAll(@PathVariable("flightNumber") String flightNumber) {
+	public List<FlightModel> flightAll() {
 		List<FlightModel> flights = flightService.getFlights();
 		return flights;
 	}
